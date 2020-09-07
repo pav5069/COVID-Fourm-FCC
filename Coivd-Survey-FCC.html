@@ -1,0 +1,147 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="Coivd-Survey-FCC.css">
+
+<body>
+<h1 id="title">
+Covid 19 Testing Survey
+</h1>
+<p id=description> 
+This is a practice survey for a free code camp project. This is an example of a survey that will be able to help if you are in need
+of a covid-19 test. 
+</p>
+<form id="survey-form">
+<div id="list-lable">
+    <ui class="form-style-1">
+<li>
+<label id="name-label" for="name"> Your Name:</label>
+     <input
+   type="text"
+   name="name" 
+   id="name"
+   class="input-field"
+   placeholder="Enter Your Name"
+   required/>
+</li>
+<li>  
+<label id="email-label" for="email">Email: </label>
+    <input
+    type="email"
+    name="email"
+    id="email"
+    class="input-field"
+    placeholder="Enter Your Email"
+    required/>
+</li>
+<li>
+<label id="age-label" for="years"> Your Age: </label>
+    <input 
+    type="number"
+    name="age"
+    id="number"
+    class="input-field"
+    min="0"
+    max="99"
+    placeholder="Enter Your Age"
+    required/>
+</li>
+<li>
+<label id="current-health-label" for="current-health">Current Health Status:</label>
+    <select id="dropdown" class="input-field name="health" required> 
+        <option value="healthy">Healthy </option>
+        <option value="feeling">Feeling Off </option>
+        <option value="Sick"> Sick</option>
+        <option value="extreme"> Extremely Sick</option>
+    </select>
+</li>
+<li>
+<label id="symptoms">In the last 24 hours, have you had any of the following symptoms</label>
+    <div class="checkboxs">
+        <br> </br>
+        <label>
+            <input
+            id="cond1" name="symptom-list" value="cough" type="checkbox"
+                />Cough</label> 
+         <label>
+            <input
+             id="cond2" name="symptom-list" value="fever-chills" type="checkbox"
+            />Fever or Chills</label> 
+        <label>
+            <input
+            id="cond3" name="symptom-list" value="shortness-of-breath" type="checkbox"
+            />Shortness of Breath or diffculty breathing </label>
+        <label>
+            <input
+            id="cond4" name="symptom-list" value="fatigue" type="checkbox"
+            /> Fatigue </label>
+        <label>
+            <input
+            id="cond5" name="symptom-list" value="muscle-or-body-aches" type="checkbox"
+            /> Muscle or body aches </label>
+         <label>
+            <input
+            id="cond6" name="symptom-list" value="Headaches" type="checkbox"
+            /> Headaches</label>
+        <label>
+            <input
+            id="cond6" name="symptom-list" value="new-loss-of-smell-or-taste" type="checkbox"
+            /> New loss of smell or taste </label>
+        <label>
+            <input
+            id="cond7" name="symptom-list" value="sore-throat" type="checkbox"
+            /> Sore throat</label>
+        <label>
+            <input
+            id="cond7" name="symptom-list" value="congestion-or-runny-nose" type="checkbox"
+            />Congestion or runny nose </label>
+        <label>
+            <input
+            id="cond8" name="symptom-list" value="nausea-or-vomiting" type="checkbox"
+            /> Nausea or vomiting </label>
+        <label>
+            <input
+            id="cond9" name="symptom-list" value="diarrhea" type="checkbox"
+            /> Diarrhea</label>
+    </div>
+</li>
+<br> </br>
+<li>
+    <div id="contact">
+<label>
+    In the last two weeks, have you cared for or had close contact with someone diagnosed with COVID‑19?
+</label>
+<br>
+<div class="contact-1">
+<label>
+    <input id="yes-click" name="yes-choice" type="radio" value="yes"/>
+    Yes
+</label>
+<label>
+    <input id="no-click" name="no-choice" type="radio" value="no"/>
+    No
+</label>
+<label>
+    <input id="unsure-click" name="unsure-choice" type="radio" value="unsure"/>
+    Unsure
+</label>
+</div>
+    </div>
+</li>
+<li>
+<br>
+<br>
+<label>
+    Additional Comments: 
+</label>
+<textarea type="text" class="input-field" id="box" placeholder="Any comments for us to consider"></textarea>
+</li>
+<input id="input" type="submit" value="submit" oneclick= "formSubmit();"/>
+    </ui>
+</div>
+</form>
+<footer>
+    <h4 id="footer-text"> Created by Philip Vitale</h4>
+</footer>
+</body>
